@@ -63,8 +63,8 @@ def text_pipeline(text, Barplot=False, Wordcloud=False):
     :return: Text column
     """
 
-    df['cleaned_text'] = clean_text(df['text'])
-    text = clean_text(df['text'])
+    df['cleaned_text'] = clean_text(text)
+    text = clean_text(text)
 
     if Barplot:
         tf = text.apply(lambda x: pd.value_counts(x.split(" "))).sum(axis=0).reset_index()
@@ -87,4 +87,5 @@ def text_pipeline(text, Barplot=False, Wordcloud=False):
 
 
 text_pipeline(df["text"], True, True)
+
 
