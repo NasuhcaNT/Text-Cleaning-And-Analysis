@@ -15,7 +15,6 @@ pd.set_option('display.width', 200)
 # Example usage: df = pd.read_csv("data/input.csv", index_col=0)
 data_path = "your_text_data.csv"
 df = pd.read_csv(data_path, index_col=0)
-# df = pd.read_csv("Wikimedia Ödev2/wiki-221126-161428/wiki_data.csv", index_col=0)
 df = df[:2000]  # Optional: limit to first 2000 rows
 
 # Function for text cleaning
@@ -87,5 +86,6 @@ def text_pipeline(text, Barplot=False, Wordcloud=False):
 
 
 text_pipeline(df["text"], True, True)
+
 
 
