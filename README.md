@@ -33,7 +33,6 @@ NLP-Text-Pipeline/
 ┣ 📂 data/
 ┃ ┗ 📄 your_text_data.csv
 ┗ 📂 outputs/
-┣ 📄 cleaned_texts.csv
 ┗ 📄 visualizations/
 
 
